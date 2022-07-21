@@ -69,7 +69,7 @@ pipeline {
             echo "pipeline post always"
         }
         success {
-            mail to: 'liming@gem-flower.com', subject: 'The pipeline successed! :)'
+            mail to: 'liming@gem-flower.com', subject: 'The pipeline successed! :)', body: "this is successed! :)"
         }
     }
 }
