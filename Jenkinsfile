@@ -43,7 +43,7 @@ pipeline {
             steps {
                 container('docker') {
                     script{
-                        sh 'docker info'
+                        sh 'docker ps'
                         docker.withRegistry( REGISTRY,REGISTRY_CREDENTIAL ){
                             
                         }
