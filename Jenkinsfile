@@ -1,9 +1,8 @@
 pipeline {
     agent any
-  
     stages {
-      stage{
-        steps{
+      stage('Build') {
+        steps {
           ehco 'Hello world'
         }
       }
