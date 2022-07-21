@@ -6,9 +6,10 @@ pipeline {
         }
     }
     stages {
-        stage('Hello') {
+        stage('Build') {
             steps {
-                echo 'Hello World'
+                sh "mvn clean package spring-boot:repackage"
+                sh "printenv" // 将环境变量打印到 console 中
             }
         }
     }
