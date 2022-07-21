@@ -77,6 +77,7 @@ pipeline {
         }
         failure {
             //mail to: 'liming@gem-flower.com', subject: 'The pipeline successed! :)', body: "this is failure! :("
+            echo "pipeline post failure ! :("
         }
     }
 }
