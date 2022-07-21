@@ -8,9 +8,9 @@ pipeline {
     
     environment {
         // gitlab auth
-        GITLAB_URL = "http://39.97.192.108:8088/bsh-wuxiaobao/manager-api.git"
+        GITLAB_URL = "git@github.com:muziriyueliming/pipeline-study.git"
         GITLAB_BRANCH = "master"
-        GITLAB_CREDENTIAL = "wxb-prod-code-pull-user"
+        GITLAB_CREDENTIAL = "muzi"
         
         //docker registry auth
         REGISTRY = "http://10.0.1.135:8080"
