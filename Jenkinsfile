@@ -1,6 +1,10 @@
 pipeline {
-    agent any
-
+    agent {
+        kubernetes {
+            inheritFrom 'jenkins-slave'
+            inheritFrom 'maven-docker-kubectl'
+        }
+    }
     stages {
         stage('Hello') {
             steps {
