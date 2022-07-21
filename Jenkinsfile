@@ -60,4 +60,16 @@ pipeline {
             }
         }
     }
+    
+    post {
+        changed {
+            echo "pipeline post changed"
+        }
+        always {
+            echo "pipeline post always"
+        }
+        success {
+            mail to: 'liming@gem-flower.com', subject: 'The pipeline successed! :)'
+        }
+    }
 }
