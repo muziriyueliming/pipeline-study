@@ -69,8 +69,10 @@ pipeline {
             echo "pipeline post always"
         }
         success {
-            //mail to: 'liming@gem-flower.com', subject: 'The pipeline successed! :)', body: "this is successed! :)"
             echo "pipeline post success"
+        }
+        failure {
+            //mail to: 'liming@gem-flower.com', subject: 'The pipeline successed! :)', body: "this is failure! :("
         }
     }
 }
